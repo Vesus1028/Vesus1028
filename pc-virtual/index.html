@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela de boot -->
+  <div id="boot">
+    <div class="boot-logo">▣</div>
+    <div class="boot-title">VesusOS</div>
+    <div class="boot-bar"><div class="boot-fill"></div></div>
+  </div>
+
+  <!-- Área de trabalho -->
+  <main id="desktop">
+    <div id="icons"></div>
+    <div id="windows"></div>
+  </main>
+
+  <!-- Menu iniciar -->
+  <div id="start-menu" hidden>
+    <div class="start-header">
+      <span class="avatar">👤</span>
+      <span>Usuário</span>
+    </div>
+    <div id="start-apps"></div>
+    <div class="start-footer">
+      <button id="btn-shutdown" title="Desligar">⏻ Desligar</button>
+    </div>
+  </div>
+
+  <!-- Barra de tarefas -->
+  <footer id="taskbar">
+    <button id="start-btn" aria-label="Iniciar">▣</button>
+    <div id="task-list"></div>
+    <div id="tray">
+      <span id="clock"></span>
+    </div>
+  </footer>
+
+  <!-- Menu de contexto -->
+  <div id="context-menu" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
